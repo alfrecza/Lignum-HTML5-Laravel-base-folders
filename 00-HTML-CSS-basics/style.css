@@ -1,0 +1,63 @@
+html {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+header {
+    background-color: green;
+    text-align: center;
+}
+
+aside {
+    background-color: greenyellow;
+}
+
+nav {
+    background-color: goldenrod;
+}
+
+footer {
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.header {
+    font-size: 46px;
+    background-color: magenta;
+}
+
+.footer {
+    font-size: 10px;
+    background-color: magenta;
+}
+
+.navigation {
+    font-size: 12px;
+    background-color: blue;
+}
+
+
+.sidebar {
+    font-size: 10px;
+    background-color: magenta; 
+}
+
+/*
+-¿Cómo podría agregar peso a la definición de fuente global(global font definition)
+para ganarse las clases agregadas por el punto 3?
+
+R:Hay muchas formas de agregar peso a la definicion de fuente global,
+para esto se debe aumentar la especificidad al momento de agregar los estilos en la 
+etiqueta html, una solucion puede ser agregar una id en la etiqueta html
+
+-Imagine que hay una declaración como class=”no-puedo-usar-inline-styles” style=”background:red” y necesita 
+cambiar el fondo a verde sin cambiar el estilo en línea. ¿Cómo podrías lograr esto?
+
+R: Mediante css modificaria el elemento utilizando 
+
+.no-puedo-usar-inline-style {
+    background-color: green !important; 
+}
+
+*/
+
