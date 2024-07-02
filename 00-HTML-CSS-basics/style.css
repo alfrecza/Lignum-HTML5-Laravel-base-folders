@@ -1,62 +1,78 @@
-html {
-    font-family: sans-serif;
-    font-size: 14px;
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-header {
-    background-color: green;
+body {
+    background-color: #1f1f1f;
+    color: white;
+    margin: 0 15px;
+}
+
+.encabezado {
+    background-color: rgb(102, 102, 102);
     text-align: center;
+    margin-top: 20px;
+    height: 10vh;
+    border-radius: 15px;
 }
 
-aside {
-    background-color: greenyellow;
+.container__flex {
+    display: flex;
+    justify-content: space-between;
+    min-height: 70vh;;
+    gap: 30px;
+    margin: 20px 0;
+    
 }
 
-nav {
-    background-color: goldenrod;
+.navigation a {
+    color: white;
+}
+
+.navigation, 
+.sidebar {
+    width: 20%;
+    background-color: rgb(102, 102, 102);
+    text-align: center;
+    border-radius: 15px;
+}
+
+main {
+    width: 60%;
+    background-color: rgb(102, 102, 102);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.content {
+    height: 10%;
+    background-color: rgb(139, 139, 139);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.section__header {
+    height: 12%;
+}
+
+.section__footer {
+    height: 15%;
+}
+
+article {
+    height: 60%;
+    background-color: rgb(139, 139, 139);
+    margin: 10px;
+    border-radius: 15px;
 }
 
 footer {
-    background-color: lightgreen;
+    background-color: rgb(102, 102, 102); 
+    height: 10vh;   
+    border-radius: 15px;
     text-align: center;
 }
-
-.header {
-    font-size: 46px;
-    background-color: magenta;
-}
-
-.footer {
-    font-size: 10px;
-    background-color: magenta;
-}
-
-.navigation {
-    font-size: 12px;
-    background-color: blue;
-}
-
-
-.sidebar {
-    font-size: 10px;
-    background-color: magenta; 
-}
-
-/*
--¿Cómo podría agregar peso a la definición de fuente global(global font definition)
-para ganarse las clases agregadas por el punto 3?
-
-R:Hay muchas formas de agregar peso a la definicion de fuente global,
-para esto se debe aumentar la especificidad al momento de agregar los estilos en la 
-etiqueta html, una solucion puede ser agregar una id en la etiqueta html
-
--Imagine que hay una declaración como class=”no-puedo-usar-inline-styles” style=”background:red” y necesita 
-cambiar el fondo a verde sin cambiar el estilo en línea. ¿Cómo podrías lograr esto?
-
-R: Mediante css modificaria el elemento utilizando 
-
-.no-puedo-usar-inline-style {
-    background-color: green !important; 
-}
-
-*/

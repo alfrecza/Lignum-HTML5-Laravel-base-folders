@@ -6,29 +6,33 @@
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="container">
     <header class="encabezado" >
         <h1>header</h1>
     </header>
-    <nav class="navigation">
-        <a href="#">Enlace del nav</a>
-        <a href="#">Enlace del nav</a>
-        <a href="#">Enlace del nav</a>
-    </nav>
-    <aside class="sidebar" >
-        <p>Contenido del aside</p>
-    </aside>
-    <main>
-        <section class="content">
-            <p>Header del contenido principal</p>
-        </section>
-        <article class="article">
-            <p>Articulo</p>
-        </article>
-        <section class="content">
-            <p>Segunda seccion</p>
-        </section>
-    </main>
+    <div class="container__flex">
+        <nav class="navigation">
+            <a href="#">Enlace del nav</a>
+        </nav>
+        <main>
+            <section>
+                <p>Primera seccion</p>
+            </section>
+            <section class="content section__header">
+                <p>Header del contenido principal</p>
+            </section>
+            <article class="article">
+                <p>Articulo</p>
+            </article>
+            <section class="content section__footer">
+                <p>Footer del main</p>
+            </section>
+        </main>
+        <aside class="sidebar">
+            <p>Contenido del aside</p>
+        </aside>
+    </div>
+    
     <footer class="footer">
         <p>Footer</p>
     </footer>
