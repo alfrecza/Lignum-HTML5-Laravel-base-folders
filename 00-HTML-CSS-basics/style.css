@@ -76,3 +76,34 @@ footer {
     border-radius: 15px;
     text-align: center;
 }
+
+/* Responsive */
+
+
+@media (max-width: 768px) {
+    .container__flex {
+        flex-direction: column;
+    }
+
+    .navigation,
+    .sidebar,
+    main {
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    main {
+        margin-bottom: 20px; 
+        height: 50vh;
+        margin: 0;
+    }
+
+    .navigation,
+    .sidebar {
+        height: 15vh;
+    }
+
+    footer {
+        margin-bottom: 15px;
+    }
+}
