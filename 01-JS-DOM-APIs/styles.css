@@ -1,0 +1,30 @@
+section, h1 {
+    text-align: center;
+}
+
+.button {
+    padding: 0.7rem 2.4rem;
+    background-color: yellowgreen;
+    border: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(137, 173, 65);
+}
+
+.fade-in {
+    animation: fadeInAnimation ease 9s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
