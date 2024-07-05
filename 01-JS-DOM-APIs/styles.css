@@ -2,14 +2,15 @@ section, h1 {
     text-align: center;
 }
 
-.button {
+.button, .button2 {
     padding: 0.7rem 2.4rem;
     background-color: yellowgreen;
     border: none;
     font-weight: bold;
+    margin: 0 10px;
 }
 
-.button:hover {
+.button:hover, .button2:hover {
     cursor: pointer;
     background-color: rgb(137, 173, 65);
 }
@@ -26,5 +27,26 @@ section, h1 {
     100% {
         opacity: 1;
     }
+}
+
+.chuckNorris {
+    background-color: burlywood;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-radius: 1rem;
+}
+
+.chuckNorrisFail {
+    background-color: red;
+    width: 30%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    border-radius: 1rem;
+    color: white;
+}
+
+.chuckNorris p {
+    font-size: 1.3rem;
 }
 
