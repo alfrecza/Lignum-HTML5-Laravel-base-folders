@@ -23,7 +23,6 @@ function addEventListeners () {
 const touchButton = () => {
     alert("Tocaste el boton!");
 };
-boton.addEventListener('click', touchButton);
 
 async function fetchApiChuck () {
     const respuesta = await fetch('https://api.chucknorris.io/jokes/random');
